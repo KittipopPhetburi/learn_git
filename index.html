@@ -3,14 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shopping Card</title>
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ccc;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .search-bar {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .cart {
+            font-size: 1.5em;
+            margin-left: 50px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .card {
+            flex: 0 1 calc(33.333% - 40px); /* Adjusted for 3 columns */
+            box-sizing: border-box;
+            margin: 10px 20px;
+            padding: 40px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 2em; /* Adjusted font size */
+            position: relative; /* Added for positioning the button */
+        }
+        .card button {
+            position: absolute; /* Positioning the button */
+            bottom: 10px; /* Distance from the bottom */
+            right: 10px; /* Distance from the right */
+            padding: 5px 10px; /* Reduced padding */
+            font-size: 0.8em; /* Reduced font size */
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
-<h1 align="center">
-    Learn Git and Github
-</h1>
-
-
+    <div class="header">
+        <div class="logo">My Shop</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="cart">🛒</div>
+    </div>
+    <div class="container">
+        <div class="card">
+            Item 1
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            Item 2
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            Item 3
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            Item 4
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            Item 5
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            Item 6
+            <button>Add to Cart</button>
+        </div>
+        <!-- Add more items as needed -->
+    </div>
 </body>
 </html>
